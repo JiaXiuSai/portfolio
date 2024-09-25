@@ -1,0 +1,378 @@
+:root {
+  --primary-color: #888888;
+  --secondary-color: #2b2b2b;
+  --accent-color: #5f5f5f;
+  --background-color: #1e1e1e;
+  --text-color: #f4f4f4;
+  --text-light-color: #cccccc;
+  --border-color: #7a7a7a;
+  --link-hover-color: #00d9a5;
+
+  --button-bg-color: var(--primary-color);
+  --button-text-color: white;
+  --button-hover-bg-color: var(--link-hover-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Global link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+/* Hero section */
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.name {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--text-light-color);
+  margin-bottom: 20px;
+}
+
+/* Hero-appear section with animations for desktop */
+.hero-appear {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  gap: 30px;
+}
+
+.hero-appear a {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.hero-appear a:hover {
+  color: var(--link-hover-color);
+}
+
+@keyframes fadeInLinks {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Typewriter section */
+.typewriter h2 {
+  font-family: "Courier", monospace;
+  overflow: hidden;
+  border-right: 0.15em solid var(--text-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  width: 0;
+  max-width: 100%;
+  display: flex;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    border-right-color: var(--text-color);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* About section */
+#about {
+  padding: 40px 10px 60px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+#about p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-light-color);
+}
+
+/* Experiences section */
+#experiences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 120px 20px;
+  gap: 40px;
+}
+
+.experience-item {
+  max-width: 800px;
+  padding: 10px;
+}
+
+.experience-item p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: var(--text-light-color);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.experience-title {
+  font-size: 1.2rem;
+  font-family: "Courier", monospace;
+}
+
+.experience-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Projects section */
+#projects {
+  padding: 80px 20px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.project {
+  max-width: 800px;
+  padding: 10px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-family: "Courier", monospace;
+}
+
+.project p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--text-light-color);
+}
+
+/* Tech stack bubbles */
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-bubble {
+  display: inline-block;
+  height: fit-content;
+  background-color: var(--background-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Contact section */
+#contact {
+  padding: 80px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+#contact p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--text-light-color);
+}
+
+/* Social icons */
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0.5;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  fill: white;
+}
+
+.icon:hover {
+  fill: var(--button-hover-bg-color);
+}
+
+.github-icon {
+  padding-top: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons a:focus {
+  outline-offset: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  .hero-appear {
+    margin-top: 20px;
+    opacity: 1;
+    visibility: visible;
+    flex-direction: column;
+    animation: none;
+  }
+
+  .typewriter h2 {
+    overflow: visible;
+    border-right: none;
+    width: 100%;
+    animation: none;
+    white-space: normal;
+    margin: 0 auto 10px auto;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .experience-title {
+    padding-bottom: 20px;
+  }
+
+  .experience-subtitle {
+    flex-direction: column;
+  }
+
+  #about,
+  #experiences,
+  #projects {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-item p,
+  .project p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-appear {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeInLinks 1s forwards;
+    animation-delay: 2.2s;
+  }
+
+  .typewriter h2 {
+    animation: typing 2s steps(17, end), blink-caret 0.75s step-end 2s;
+    animation-fill-mode: forwards;
+  }
+}
