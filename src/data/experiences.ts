@@ -10,7 +10,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     title: 'Full Stack Developer',
-    company: 'MoneyMax',
+    company: 'MoneyMax Financial Services Ltd.',
     companyUrl: 'https://moneymax.com.sg/',
     period: 'October 2024 - Present',
     location: 'Singapore',
@@ -19,7 +19,7 @@ const experiences: Experience[] = [
   },
   {
     title: 'Software Engineer',
-    company: 'The Hut Group',
+    company: 'THG plc (The Hut Group)',
     companyUrl: 'https://www.thg.com/',
     period: 'July 2022 - July 2024',
     location: 'Manchester, United Kingdom',
