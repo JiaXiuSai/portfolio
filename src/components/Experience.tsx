@@ -36,7 +36,7 @@ const Experience = () => {
                   <p className="text-gray-400">{exp.location}</p>
                 </div>
               </div>
-              <p className="text-gray-300">{exp.description}</p>
+              {exp.description && <p className="text-gray-300">{exp.description}</p>}
             </div>
           ))}
         </div>
