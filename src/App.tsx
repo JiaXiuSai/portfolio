@@ -8,12 +8,12 @@ import Skills from './components/Skills'
 
 const App = () => {
   return (
-    <div className="w-screen bg-gray-900 text-gray-100">
+    <div className="min-h-screen bg-slate-950 text-slate-100 antialiased">
       <Navbar />
-      <main>
+      <main className="overflow-x-hidden">
         <Hero />
-        <Experience />
         <Projects />
+        <Experience />
         <Skills />
         <Contact />
       </main>

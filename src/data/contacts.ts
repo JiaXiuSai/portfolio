@@ -18,12 +18,12 @@ const contacts: Contact[] = [
   },
   {
     href: 'https://github.com/JiaXiuSai',
-    ariaLabel: "Open Jacob's GitHub in a new tab",
+    ariaLabel: 'GitHub',
     icon: FaGithub,
   },
   {
     href: 'https://www.linkedin.com/in/jacob-sai',
-    ariaLabel: "Open Jacob's LinkedIn in a new tab",
+    ariaLabel: 'LinkedIn',
     icon: FaLinkedin,
   },
 ]

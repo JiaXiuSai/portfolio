@@ -1,14 +1,5 @@
-import { FaDatabase, FaGithub, FaJs, FaNode, FaPython, FaReact } from 'react-icons/fa'
-import {
-  SiAstro,
-  SiMongodb,
-  SiNestjs,
-  SiNextdotjs,
-  SiPostgresql,
-  SiStrapi,
-  SiTailwindcss,
-  SiTypescript,
-} from 'react-icons/si'
+import { FaDatabase, FaGithub, FaNode, FaPython, FaReact } from 'react-icons/fa'
+import { SiAstro, SiFigma, SiMongodb, SiNextdotjs, SiPostgresql, SiTailwindcss, SiTypescript } from 'react-icons/si'
 
 interface Skill {
   name: string
@@ -16,20 +7,18 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'JavaScript', icon: FaJs },
-  { name: 'React', icon: FaReact },
-  { name: 'Node.js', icon: FaNode },
   { name: 'TypeScript', icon: SiTypescript },
-  { name: 'Python', icon: FaPython },
-  { name: 'GitHub', icon: FaGithub },
+  { name: 'React', icon: FaReact },
   { name: 'Next.js', icon: SiNextdotjs },
+  { name: 'Node.js', icon: FaNode },
   { name: 'Tailwind CSS', icon: SiTailwindcss },
-  { name: 'MongoDB', icon: SiMongodb },
   { name: 'PostgreSQL', icon: SiPostgresql },
-  { name: 'SQL', icon: FaDatabase },
-  { name: 'Nest.js', icon: SiNestjs },
+  { name: 'MongoDB', icon: SiMongodb },
   { name: 'Astro', icon: SiAstro },
-  { name: 'Strapi CMS', icon: SiStrapi },
+  { name: 'Python', icon: FaPython },
+  { name: 'SQL', icon: FaDatabase },
+  { name: 'Figma', icon: SiFigma },
+  { name: 'GitHub', icon: FaGithub },
 ]
 
 export default skills

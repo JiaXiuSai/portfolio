@@ -4,7 +4,7 @@ import { experiences } from '../data'
 
 const Experience = () => {
   return (
-    <section id="experience" className="w-full bg-gray-800 px-4 py-16">
+    <section id="experience" className="w-full bg-slate-950 px-4 py-16">
       <div className="mx-auto max-w-7xl">
         <h2 className="mb-8 text-center text-3xl font-bold">Experience</h2>
         <div className="space-y-8">

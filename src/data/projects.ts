@@ -1,4 +1,4 @@
-import { passwordManagers, theatreCapture, thgCom, thgIngenuity } from '../assets'
+import { theatreCapture, thgCom, thgIngenuity, verlataThimble } from '../assets'
 
 interface Project {
   title: string
@@ -10,17 +10,25 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Thimble by Verlata',
+    description:
+      'Built security and governance tools for NetDocuments, helping firms monitor access, automate controls, and reduce manual compliance work.',
+    tech: ['React', 'Node.js', 'NetDocuments', 'Security', 'Reporting', 'Azure'],
+    image: verlataThimble,
+    link: 'https://www.verlata.com/thimble',
+  },
+  {
     title: 'The Hut Group Corporate Websites',
     description:
-      'Contributed to the development and ongoing maintenance of corporate websites for THG, including THG.com, thgingenuity.com, etc. Leveraging Astro, Strapi, and Tailwind CSS, I focused on optimizing performance, implementing custom plugins, and ensuring seamless integrations.',
+      'Contributed to the development and ongoing maintenance of corporate websites for THG, including THG.com and thgingenuity.com, improving performance and shipping integrations for key business tools.',
     tech: ['Astro', 'Strapi', 'Tailwind CSS', 'Zoho', 'Greenhouse', 'AWS', 'JavaScript', 'Node.js'],
     image: thgCom,
     link: 'https://www.thg.com',
   },
   {
-    title: 'THG Ingenuity Eccommerce Platform',
+    title: 'THG Ingenuity Ecommerce Platform',
     description:
-      'As part of the THG Ingenuity team, I maintained and enhanced the React frontend and Node.js backend of the Imagination e-commerce platform. I contributed to improving the user experience, resolving critical bugs, and adding new features.',
+      'Improved the React frontend and Node.js backend of an ecommerce platform, shipping fixes and features for a smoother customer experience.',
     tech: ['React', 'Node.js', 'JavaScript', 'AWS', 'MySQL', 'REST API'],
     image: thgIngenuity,
     link: 'https://www.thgingenuity.com',
@@ -28,19 +36,19 @@ const projects: Project[] = [
   {
     title: 'TheatreCapture',
     description:
-      'Developed the TheatreCapture app from scratch at Health Data Insight CIC using React Native. This app, built for the National Theatre Dataset project, helps improve NHS theatre efficiency by collecting and managing key data.',
+      'Built a React Native app for NHS theatre data capture, helping teams improve efficiency and manage key operational metrics.',
     tech: ['React Native', 'JavaScript', 'Node.js', 'Expo', 'AWS', 'GraphQL'],
     image: theatreCapture,
     link: 'https://healthdatainsight.org.uk/project/theatrecapture',
   },
-  {
+  /* {
     title: 'Password Manager Security Analysis',
     description:
-      'Conducted an in-depth security analysis of seven popular password managers under the supervision of Dr. Ehsan Toreini. Identified vulnerabilities related to encryption, data storage, and user authentication.',
+      'Reviewed seven password managers and identified weaknesses in encryption, storage, and authentication practices.',
     tech: ['Security Analysis', 'Cryptography', 'Python', 'OWASP'],
     image: passwordManagers,
     link: 'https://github.com/JiaXiuSai/password-manager-analysis',
-  },
+  }, */
 ]
 
 export default projects
