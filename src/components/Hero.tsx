@@ -1,6 +1,9 @@
 const Hero = () => {
   return (
-    <section id="top" className="relative w-full overflow-hidden bg-slate-950 px-4 pt-28 pb-16 sm:pt-32">
+    <section
+      id="top"
+      className="relative w-full overflow-hidden bg-slate-950 px-4 pt-28 pb-16 sm:pt-32"
+    >
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[32rem] bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.22),_rgba(59,130,246,0.09)_35%,_transparent_75%)]" />
 
       <div className="relative mx-auto max-w-7xl text-center">
