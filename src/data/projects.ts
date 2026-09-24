@@ -21,7 +21,7 @@ const projects: Project[] = [
     title: 'The Hut Group Corporate Websites',
     description:
       'Contributed to the development and ongoing maintenance of corporate websites for THG, including THG.com and thgingenuity.com, improving performance and shipping integrations for key business tools.',
-    tech: ['Astro', 'Strapi', 'Tailwind CSS', 'Zoho', 'Greenhouse', 'AWS', 'JavaScript', 'Node.js'],
+    tech: ['Astro', 'Strapi', 'Tailwind CSS', 'Zoho', 'Greenhouse', 'AWS', 'TypeScript'],
     image: thgCom,
     link: 'https://www.thg.com',
   },
@@ -29,7 +29,7 @@ const projects: Project[] = [
     title: 'THG Ingenuity Ecommerce Platform',
     description:
       'Improved the React frontend and Node.js backend of an ecommerce platform, shipping fixes and features for a smoother customer experience.',
-    tech: ['React', 'Node.js', 'JavaScript', 'AWS', 'MySQL', 'REST API'],
+    tech: ['React', 'Node.js', 'TypeScript', 'AWS', 'MySQL', 'REST API'],
     image: thgIngenuity,
     link: 'https://www.thgingenuity.com',
   },
@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: 'TheatreCapture',
     description:
       'Built a React Native app for NHS theatre data capture, helping teams improve efficiency and manage key operational metrics.',
-    tech: ['React Native', 'JavaScript', 'Node.js', 'Expo', 'AWS', 'GraphQL'],
+    tech: ['React Native', 'TypeScript', 'Node.js', 'Expo', 'AWS', 'GraphQL'],
     image: theatreCapture,
     link: 'https://healthdatainsight.org.uk/project/theatrecapture',
   },
